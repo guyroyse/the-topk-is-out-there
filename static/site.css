@@ -1,0 +1,15 @@
+body {
+  margin-top: 20px;
+  font-family: Raleway;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+button {
+  font-size: 24px;
+  margin: 20px 10px;
+  width: 125px;
+}
