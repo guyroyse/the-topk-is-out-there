@@ -23,8 +23,8 @@ def setup_rebloom():
   client.delete('ufo_words', 'ufo_shapes')
 
   # setup some Top-K action!
-  client.topkReserve('ufo_words', 10, 10, 5, 0.9)
-  client.topkReserve('ufo_shapes', 5, 4, 5, 0.9)
+  client.topkReserve('ufo_words', k=10, width=10, depth=5, decay=0.9)
+  client.topkReserve('ufo_shapes', k=5, width=4, depth=5, decay=0.9)
 
   # return the client
   return client
