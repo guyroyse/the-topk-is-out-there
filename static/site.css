@@ -5,9 +5,9 @@ body {
   align-items: center;
   font-family: 'Special Elite', cursive;
   margin: 60px auto;
-  width: 600px;
+  width: 800px;
   text-align: center;
-  font-size: 32px;
+  font-size: 36px;
   background-size: cover;
   background-image: url(background.jpg);
   background-repeat: no-repeat;
@@ -16,15 +16,21 @@ body {
 
 h1 {
   font-size: 48px;
+  background-color: black;
 }
 
 h2 {
-  font-size: 32px;
-  text-decoration: underline;
+  text-align: center;
+  font-size: 36px;
+  background-color: black;
 }
 
 ol {
-  padding: 0px;
+  padding-top: 15px;
+  padding-bottom: 5px;
+  padding-left: 75px;
+  padding-right: 10px;
+  background-color: black;
 }
 
 #topWords {
