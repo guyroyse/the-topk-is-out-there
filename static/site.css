@@ -1,14 +1,17 @@
-@import url(https://fonts.googleapis.com/css?family=Raleway);
+@import url(https://fonts.googleapis.com/css?family=Special+Elite);
 
 body {
-  background-color: #ffffff;
-  color: #111111;
+  color: #ffffff;
   align-items: center;
-  font-family: Raleway;
+  font-family: 'Special Elite', cursive;
   margin: 60px auto;
   width: 600px;
   text-align: center;
   font-size: 32px;
+  background-size: cover;
+  background-image: url(background.jpg);
+  background-repeat: no-repeat;
+  text-shadow: 0px 0px 10px #000000;
 }
 
 h1 {
