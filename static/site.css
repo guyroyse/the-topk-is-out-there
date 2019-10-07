@@ -1,15 +1,35 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+
 body {
-  margin-top: 20px;
-  font-family: Raleway;
+  background-color: #ffffff;
+  color: #111111;
   align-items: center;
+  font-family: Raleway;
+  margin: 60px auto;
+  width: 600px;
+  text-align: center;
+  font-size: 32px;
 }
 
 h1 {
-  text-align: center;
+  font-size: 48px;
 }
 
-button {
-  font-size: 24px;
-  margin: 20px 10px;
-  width: 125px;
+h2 {
+  font-size: 32px;
+  text-decoration: underline;
+}
+
+ol {
+  padding: 0px;
+}
+
+#topWords {
+  float: left;
+  text-align: left;
+}
+
+#topShapes {
+  float: right;
+  text-align: left;
 }

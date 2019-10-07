@@ -1,19 +1,14 @@
-let button, wordList, shapeList
+let wordList, shapeList
 
 document.addEventListener('DOMContentLoaded', onDocumentLoaded)
 
 function onDocumentLoaded() {
-  button = document.querySelector('#refreshList')
   wordList = document.querySelector('#topWordsList')
   shapeList = document.querySelector('#topShapesList')
 
   refreshTopK()
 
-  button.addEventListener('click', onRefreshClicked)
-}
-
-function onRefreshClicked() {
-  refreshTopK()
+  setInterval(refreshTopK, 1000)
 }
 
 function refreshTopK() {
@@ -27,6 +22,7 @@ async function refreshTopKWords() {
 
   wordList.textContent = ""
   words
+    .sort((a, b) => b.count - a.count)
     .map(entry => `${entry.word} (${entry.count})`)
     .forEach(s => {
       let li = document.createElement("li")
@@ -41,6 +37,7 @@ async function refreshTopKShapes() {
 
   shapeList.textContent = ""
   shapes
+    .sort((a, b) => b.count - a.count)
     .map(entry => `${entry.shape} (${entry.count})`)
     .forEach(s => {
       let li = document.createElement("li")
